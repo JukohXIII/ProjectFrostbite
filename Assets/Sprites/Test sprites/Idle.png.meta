@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ba55d2655ac6da948b1a9244c5c328cb
+guid: c8ef225375eb05c4e8294abc18fecf23
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,7 +45,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Standing Paladin_0
+      name: Idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,20 +131,20 @@ TextureImporter:
         width: 64
         height: 31
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e1c4c7c1ecd43e418866bfbb8f82cdf
-      internalID: -2071331439
+      spriteID: 6e036c1d6d9b2c74fb078533bc18aba9
+      internalID: 2057050160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Standing Paladin_1
+      name: Idle_1
       rect:
         serializedVersion: 2
         x: 64
@@ -152,20 +152,20 @@ TextureImporter:
         width: 64
         height: 31
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca6616d4938adc74d99d822968102e1a
-      internalID: -132845142
+      spriteID: d2200587494d5614ea3a7b32f04a327e
+      internalID: -1582116316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Standing Paladin_2
+      name: Idle_2
       rect:
         serializedVersion: 2
         x: 128
@@ -173,20 +173,20 @@ TextureImporter:
         width: 64
         height: 31
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 898f8dbc616e80c42ac38d235ec47e85
-      internalID: 521818369
+      spriteID: a528fe57d287aac40a5df2689f734c8c
+      internalID: 1283141646
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Standing Paladin_3
+      name: Idle_3
       rect:
         serializedVersion: 2
         x: 192
@@ -194,14 +194,14 @@ TextureImporter:
         width: 64
         height: 31
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be41cbed54596114aa6eb24e3270fb16
-      internalID: 302809547
+      spriteID: c1712d648ec2b2a4eafd45d95aab1995
+      internalID: 79065079
       vertices: []
       indices: 
       edges: []
@@ -217,10 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Standing Paladin_0: -2071331439
-      Standing Paladin_1: -132845142
-      Standing Paladin_2: 521818369
-      Standing Paladin_3: 302809547
+      Idle_0: 2057050160
+      Idle_1: -1582116316
+      Idle_2: 1283141646
+      Idle_3: 79065079
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

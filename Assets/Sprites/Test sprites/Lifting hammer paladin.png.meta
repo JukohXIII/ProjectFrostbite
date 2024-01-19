@@ -137,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c56da0530dfb514aa4b56de49448ab5
-      internalID: -60202371
+      spriteID: b0625dfa32ada344597367df0f8d139a
+      internalID: 1435674853
       vertices: []
       indices: 
       edges: []
@@ -158,8 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e6db707385eefe4e963bd4e22254db3
-      internalID: 492480610
+      spriteID: e749d21dcda849a4f8abafcb1aa057ac
+      internalID: 436082168
       vertices: []
       indices: 
       edges: []
@@ -179,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccc33801e9c7f674c8a641ab549662fc
-      internalID: -910320101
+      spriteID: 9fd1708b2522c5e44ac8449958c7a2ee
+      internalID: 443890022
       vertices: []
       indices: 
       edges: []
@@ -200,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a0388933c632a94b8cd68c92ceb3d44
-      internalID: -2026823563
+      spriteID: 32874d87fcf259e47af313c451f9d968
+      internalID: 1205265814
       vertices: []
       indices: 
       edges: []
@@ -221,8 +221,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25646cfffaa32f14d803602f13158144
-      internalID: -751730579
+      spriteID: d78e413587b1e284b8b8a4634cf7ee61
+      internalID: 52264234
       vertices: []
       indices: 
       edges: []
@@ -242,8 +242,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 148e47a8d16ba234f8c960a3e04f4059
-      internalID: 504359965
+      spriteID: cfa2b0a8dcdd26e49a90291cf81e284d
+      internalID: 319166299
       vertices: []
       indices: 
       edges: []
@@ -263,8 +263,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54202d9fa55d9c0459c52d330a312b4d
-      internalID: 1228157090
+      spriteID: 560fbf27d150aa2439d91e7a81c34cc2
+      internalID: 1158876427
       vertices: []
       indices: 
       edges: []
@@ -284,8 +284,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c13780481b243c74aaaa8f59b6fa8fa0
-      internalID: 2016609820
+      spriteID: 7c77d3b908f2cbc42a9b1bdce30458c0
+      internalID: 1679540711
       vertices: []
       indices: 
       edges: []
@@ -301,14 +301,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Lifting hammer paladin_0: -60202371
-      Lifting hammer paladin_1: 492480610
-      Lifting hammer paladin_2: -910320101
-      Lifting hammer paladin_3: -2026823563
-      Lifting hammer paladin_4: -751730579
-      Lifting hammer paladin_5: 504359965
-      Lifting hammer paladin_6: 1228157090
-      Lifting hammer paladin_7: 2016609820
+      Lifting hammer paladin_0: 1435674853
+      Lifting hammer paladin_1: 436082168
+      Lifting hammer paladin_2: 443890022
+      Lifting hammer paladin_3: 1205265814
+      Lifting hammer paladin_4: 52264234
+      Lifting hammer paladin_5: 319166299
+      Lifting hammer paladin_6: 1158876427
+      Lifting hammer paladin_7: 1679540711
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

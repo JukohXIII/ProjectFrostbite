@@ -137,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9e49bf4544341847a10487a03fa50e0
-      internalID: -1476347243
+      spriteID: daa13c8fda63af946ba7bd6aafc47427
+      internalID: -1554176192
       vertices: []
       indices: 
       edges: []
@@ -158,8 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d76b5a80adbfd474e9368fa4dd83510c
-      internalID: 789335992
+      spriteID: 1fa46c4bf328e5e4fae18c363aaae6b1
+      internalID: -399848302
       vertices: []
       indices: 
       edges: []
@@ -179,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2e567b83d703dc4bb11bece8eb73587
-      internalID: -1737354525
+      spriteID: 6fb4f616d211d9442a34dd5cf0406e4a
+      internalID: 702043806
       vertices: []
       indices: 
       edges: []
@@ -200,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5e7b6c5bf68aa445b17afa016445552
-      internalID: 1177641565
+      spriteID: e99be74c47a22494aa0f6ac67c7565a4
+      internalID: -747097305
       vertices: []
       indices: 
       edges: []
@@ -221,8 +221,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff6b91c8684e40b48a044acec8c5f5f3
-      internalID: 447144585
+      spriteID: ab116b2fe87604e4788ca7a03df1ffcf
+      internalID: -1016964196
       vertices: []
       indices: 
       edges: []
@@ -242,8 +242,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3109f1500dcef3243b43d73254d0d950
-      internalID: -1161567251
+      spriteID: a8005f5a4b0086e45ae39f7810943940
+      internalID: -236406946
       vertices: []
       indices: 
       edges: []
@@ -263,8 +263,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21f5acaa0c1a28c47b5ece05f5cf1325
-      internalID: 1670080590
+      spriteID: 6199abcd0697bcb4fb3d3527de157edb
+      internalID: -1799916696
       vertices: []
       indices: 
       edges: []
@@ -280,13 +280,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      DyingPaladin_0: -1476347243
-      DyingPaladin_1: 789335992
-      DyingPaladin_2: -1737354525
-      DyingPaladin_3: 1177641565
-      DyingPaladin_4: 447144585
-      DyingPaladin_5: -1161567251
-      DyingPaladin_6: 1670080590
+      DyingPaladin_0: -1554176192
+      DyingPaladin_1: -399848302
+      DyingPaladin_2: 702043806
+      DyingPaladin_3: -747097305
+      DyingPaladin_4: -1016964196
+      DyingPaladin_5: -236406946
+      DyingPaladin_6: -1799916696
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
