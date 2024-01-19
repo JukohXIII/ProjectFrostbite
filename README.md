@@ -3,6 +3,7 @@
 2 - Helheim
 
 3/4 - Niflheim/Muspelheim (choix du joueur, 2 fragments pour aller en Midgard)
+
 5 - Midgard
 
 6 - Svartlfheim
