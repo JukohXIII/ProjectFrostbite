@@ -6,20 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5a07e840-2198-4390-a216-a6c9dc0b18d2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectFrostbite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectFrostbite/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/TestPaladinAnimations.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/TestPaladinAnimations/Standing Paladin_0.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/TestPaladinAnimations/Standing Paladin_0.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/TestPaladinAnimations/StandingStillPaladinAnimation.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/TestPaladinAnimations/StandingStillPaladinAnimation.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Test sprites/DyingPaladin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Test sprites/DyingPaladin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Test sprites/HammerSmashPaladin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Test sprites/HammerSmashPaladin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Test sprites/Lifting hammer paladin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Test sprites/Lifting hammer paladin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Test sprites/Running paladin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Test sprites/Running paladin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Test sprites/SpecialAttackPaladin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Test sprites/SpecialAttackPaladin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Test sprites/Standing Paladin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Test sprites/Standing Paladin.png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +19,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://D:/GameProjects/ProjectFrostbite/Assets/Scripts/PlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/GameProjects/ProjectFrostbite/Assets/Animations/Player.controller" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -114,7 +103,10 @@
       <workItem from="1705631146255" duration="1627000" />
       <workItem from="1705675796153" duration="143000" />
       <workItem from="1705676268051" duration="30000" />
-      <workItem from="1705676355447" duration="4702000" />
+      <workItem from="1705676355447" duration="5218000" />
+      <workItem from="1705700251909" duration="1673000" />
+      <workItem from="1705709656096" duration="1612000" />
+      <workItem from="1705711882960" duration="312000" />
     </task>
     <task id="LOCAL-00001" summary="Deleted test sprites">
       <option name="closed" value="true" />

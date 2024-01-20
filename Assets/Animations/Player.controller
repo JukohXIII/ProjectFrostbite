@@ -116,7 +116,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: RightClick
+    m_ConditionEvent: LightAttack
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -853149612631046205}
@@ -149,10 +149,10 @@ AnimatorStateMachine:
     m_Position: {x: 320, y: 110, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8827660445522166137}
-    m_Position: {x: 350, y: 280, z: 0}
+    m_Position: {x: 330, y: 230, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8938637423733734853}
-    m_Position: {x: 680, y: 110, z: 0}
+    m_Position: {x: 660, y: 110, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7426268985410147470}
     m_Position: {x: 600, y: -10, z: 0}
@@ -259,19 +259,19 @@ AnimatorController:
     m_DefaultFloat: 1
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: LightAttack
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: HeavyAttack
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
