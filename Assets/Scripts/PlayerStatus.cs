@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using UnityEngine;
 
 public class PlayerStatus : MonoBehaviour
 {
-    [SerializableField] private int healthPoints;
-    [SerializableField] private int playerLevel;
-    [SerializableField] private double baseDamage;
-    [SerializableField] private double staminaQuantity;
-    [SerializableField] private double manaQuantity;
+    [SerializeField] private int healthPoints;
+    [SerializeField] private int playerLevel;
+    [SerializeField] private double baseDamage;
+    [SerializeField] private double staminaQuantity;
+    [SerializeField] private double manaQuantity;
     
     
     // Start is called before the first frame update
