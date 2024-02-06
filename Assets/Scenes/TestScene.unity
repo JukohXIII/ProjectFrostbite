@@ -425,6 +425,7 @@ GameObject:
   - component: {fileID: 747923264}
   - component: {fileID: 747923263}
   - component: {fileID: 747923268}
+  - component: {fileID: 747923269}
   m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
@@ -611,6 +612,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &747923269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747923262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 587a214fd040b4542b85e91703565420, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPoints: 0
+  playerLevel: 0
+  baseDamage: 0
+  staminaQuantity: 0
+  manaQuantity: 0
 --- !u!1 &1325491928
 GameObject:
   m_ObjectHideFlags: 0
