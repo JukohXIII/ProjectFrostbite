@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
+using System.Threading;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -70,6 +71,8 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             animator.SetBool("HeavyAttack",true);
+            isJumping = true;
+            rigidBody.velocity = new Vector2(rigidBody.velocity.x, jumpingPower);
         }
         if (Input.GetKeyUp(KeyCode.Mouse1))
         {
