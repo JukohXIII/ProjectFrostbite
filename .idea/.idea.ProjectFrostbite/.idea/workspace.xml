@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a07e840-2198-4390-a216-a6c9dc0b18d2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectFrostbite/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2024_15_51_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectFrostbite/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2024_15_51__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectFrostbite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectFrostbite/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Paladin_Dying.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Paladin_Dying.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerStatus.cs" afterDir="false" />
-    </list>
+    <list default="true" id="5a07e840-2198-4390-a216-a6c9dc0b18d2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +38,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -115,6 +106,7 @@
       <workItem from="1708022320211" duration="706000" />
       <workItem from="1710788851190" duration="602000" />
       <workItem from="1711985792686" duration="3223000" />
+      <workItem from="1712084813916" duration="127000" />
     </task>
     <task id="LOCAL-00001" summary="Deleted test sprites">
       <option name="closed" value="true" />
