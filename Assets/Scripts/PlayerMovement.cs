@@ -71,8 +71,6 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             animator.SetBool("HeavyAttack",true);
-            isJumping = true;
-            rigidBody.velocity = new Vector2(rigidBody.velocity.x, jumpingPower);
         }
         if (Input.GetKeyUp(KeyCode.Mouse1))
         {
