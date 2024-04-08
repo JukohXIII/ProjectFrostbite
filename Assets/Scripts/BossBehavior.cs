@@ -13,7 +13,7 @@ public class BossBehavior : MonoBehaviour
         if(target!=){
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
 
-            Vector 2 direction = target.position - transform.position;
+            Vector2 direction = target.position - transform.position;
             transform.up = direction.normalized;
         }
     }
