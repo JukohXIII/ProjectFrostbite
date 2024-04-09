@@ -10,11 +10,16 @@ public class BossBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(target!=){
-            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        if(target != null){
+            Vector2 direction = (target.position - transform.position).normalized;
+            direction.y = 0f;
 
-            Vector2 direction = target.position - transform.position;
-            transform.up = direction.normalized;
+            transform.position += (Vector3)direction * speed * Time.deltaTime;
+            
+            if(direction != Vector2.zero){
+                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+                transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            }
         }
     }
 }
