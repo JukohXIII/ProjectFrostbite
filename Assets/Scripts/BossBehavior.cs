@@ -5,21 +5,33 @@ using UnityEngine;
 public class BossBehavior : MonoBehaviour
 {
     [SerializeField] private Transform target;
-    public float speed = 5f;
+    [SerializeField] private Animator animator;
+
+
+    private float speed = 5f;
+    private bool isMoving = false;
+    private SpriteRenderer bossSpriteRenderer;
+    void Start(){
+        bossSpriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if(target != null){
-            Vector2 direction = (target.position - transform.position).normalized;
-            direction.y = 0f;
+        MoveTowardsPlayerXAxis();
 
-            transform.position += (Vector3)direction * speed * Time.deltaTime;
-            
-            if(direction != Vector2.zero){
-                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-                transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-            }
-        }
     }
+
+    private void MoveTowardsPlayerXAxis(){
+        if(target != null){
+            Vector3 targetPosition = new Vector3(target.position.x, transform.position.y, transform.position.z);
+            transform.position = new Vector3(Vector3.MoveTowards(transform.position, targetPosition,speed*Time.deltaTime).x,
+            transform.position.y, transform.position.z);
+        }
+        while(transform.position.x != target.position.x){
+            isMoving = true;
+        }
+        isMoving=false;
+    }
+    
 }
