@@ -584,7 +584,7 @@ Transform:
   m_GameObject: {fileID: 747923262}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.6536183, y: -1.4750594, z: 0}
+  m_LocalPosition: {x: -9.23, y: -2.35, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -919,7 +919,7 @@ Transform:
   m_GameObject: {fileID: 1397602228}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.48, y: 0.32, z: 0}
+  m_LocalPosition: {x: 15.3, y: 3.39, z: 0}
   m_LocalScale: {x: -5.7475, y: 0.4875, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1066,7 +1066,6 @@ GameObject:
   - component: {fileID: 1929342406}
   - component: {fileID: 1929342405}
   - component: {fileID: 1929342403}
-  - component: {fileID: 1929342402}
   - component: {fileID: 1929342409}
   m_Layer: 7
   m_Name: TestEnemy
@@ -1075,26 +1074,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1929342402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1929342401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 587a214fd040b4542b85e91703565420, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthPoints: 0
-  playerLevel: 0
-  baseDamage: 0
-  staminaQuantity: 0
-  manaQuantity: 0
-  animator: {fileID: 0}
-  isDead: 0
-  xpAmount: 0
 --- !u!95 &1929342403
 Animator:
   serializedVersion: 5
@@ -1249,7 +1228,7 @@ Transform:
   m_GameObject: {fileID: 1929342401}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 1.24, y: -0.47, z: 0}
+  m_LocalPosition: {x: 8.46, y: -0.44, z: 0}
   m_LocalScale: {x: 7.872499, y: 7.8725004, z: 1.5745}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1269,6 +1248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 747923267}
+  animator: {fileID: 1929342403}
   speed: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
