@@ -6,11 +6,11 @@ public class BossBehavior : MonoBehaviour
 {
     [SerializeField] private Transform target;
     [SerializeField] private Animator animator;
-
     [SerializeField] private float speed = 5f;
     private SpriteRenderer bossSpriteRenderer;
-
     private bool animationFinished = false;
+    private bool isFacingRight = false;
+    
     void Start(){
         bossSpriteRenderer = GetComponent<SpriteRenderer>();
         StartCoroutine(PlayAnimationAndWait());
@@ -39,8 +39,23 @@ public class BossBehavior : MonoBehaviour
             if(Mathf.Approximately(target.position.x, transform.position.x)){
             animator.SetFloat("speed", 0);
             }
+
+            if(target.position.x < transform.position.x){
+                if(isFacingRight){
+                    Vector3 localScale = transform.localScale;
+                    localScale.x *= -1f;
+                    transform.localScale = localScale;
+                    isFacingRight = false;
+                }
+            }else if(target.position.x > transform.position.x){
+                if(!isFacingRight){
+                    Vector3 localScale = transform.localScale;
+                    localScale.x *= -1f;
+                    transform.localScale = localScale;
+                    isFacingRight = true;
+                }
+                
+            }else{} 
         }
-        
-        
     }
 }
