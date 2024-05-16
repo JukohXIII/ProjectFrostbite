@@ -64,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    // Checks if some keys are pressed and do the action linked to the input
+    // Checks if some keys are pressed and do the action linked to the input and launch the linked animation
     private void CheckKeys(){
         if (Input.GetKeyDown(KeyCode.S))
         {
