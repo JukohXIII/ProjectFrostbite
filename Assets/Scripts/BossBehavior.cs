@@ -10,11 +10,9 @@ public class BossBehavior : MonoBehaviour
     private SpriteRenderer bossSpriteRenderer;
     private bool animationFinished = false;
     private bool isFacingRight = false;
-    
     void Start(){
         // Gets the sprite renderer of the boss
         bossSpriteRenderer = GetComponent<SpriteRenderer>();
-        StartCoroutine(PlayAnimationAndWait());
     }
 
     // Routine for the Taunt animator to play ONCE
