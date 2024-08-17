@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
+using UnityEditor.VersionControl;
 using UnityEngine;
 
 public class BossBehavior : MonoBehaviour
@@ -13,6 +15,7 @@ public class BossBehavior : MonoBehaviour
     void Start(){
         // Gets the sprite renderer of the boss
         bossSpriteRenderer = GetComponent<SpriteRenderer>();
+        StartCoroutine(PlayAnimationAndWait());
     }
 
     // Routine for the Taunt animator to play ONCE
@@ -46,7 +49,7 @@ public class BossBehavior : MonoBehaviour
             // If the boss' position is quite the same as the player's position, sets the animation param "speed" to 0 to stop the moving animation
             // and start the idle animation
             if(Mathf.Approximately(target.position.x, transform.position.x)){
-            animator.SetFloat("speed", 0);
+                animator.SetFloat("speed", 0);
             }
 
             // If the boss is on the player's right
