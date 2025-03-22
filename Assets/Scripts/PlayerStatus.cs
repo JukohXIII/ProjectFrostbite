@@ -7,7 +7,7 @@ public class PlayerStatus : MonoBehaviour
 {
     [SerializeField] private int healthPoints;
     [SerializeField] private int playerLevel;
-    [SerializeField] private double baseDamage;
+    [SerializeField] public double baseDamage;
     [SerializeField] private double staminaQuantity;
     [SerializeField] private double manaQuantity;
     [SerializeField] private Animator animator;
@@ -20,7 +20,7 @@ public class PlayerStatus : MonoBehaviour
     {
         healthPoints = 100;
         playerLevel = 1;
-        baseDamage = 50;
+        baseDamage = 500;
         staminaQuantity = 100;
         manaQuantity = 50;
         isDead = false;
