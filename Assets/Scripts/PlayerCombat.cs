@@ -72,19 +72,16 @@ public class PlayerCombat : MonoBehaviour
     {
         int finalDamage = baseDamage + (int)playerStatus.baseDamage;
 
-        // Attaque les ennemis
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
         foreach (Collider2D enemy in hitEnemies)
         {
             enemy.GetComponent<BossStatus>().TakeDamage(finalDamage);
         }
 
-        // Attaque le boss
         Collider2D[] hitBoss = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, bossLayer);
         foreach (Collider2D boss in hitBoss)
         {
-            boss.GetComponent<BossStatus>().BossHealth -= finalDamage;
-            Debug.Log("Boss HP: " + boss.GetComponent<BossStatus>().BossHealth);
+            boss.GetComponent<BossStatus>().TakeDamage(finalDamage);
         }
     }
 

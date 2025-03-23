@@ -376,7 +376,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.170235
+  orthographic size: 6.592017
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -402,7 +402,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.043, y: 0.637, z: -10}
-  m_LocalScale: {x: 0.2, y: 0.085, z: 1}
+  m_LocalScale: {x: 0.97749996, y: 0.085, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 747923267}
@@ -422,6 +422,7 @@ GameObject:
   - component: {fileID: 747923263}
   - component: {fileID: 747923268}
   - component: {fileID: 747923269}
+  - component: {fileID: 747923270}
   m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
@@ -587,6 +588,8 @@ Transform:
   - {fileID: 165931847}
   - {fileID: 519420032}
   - {fileID: 767789631}
+  - {fileID: 1001028341}
+  - {fileID: 1908980565}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &747923268
@@ -630,6 +633,31 @@ MonoBehaviour:
   animator: {fileID: 747923268}
   isDead: 0
   xpAmount: 0
+--- !u!114 &747923270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747923262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcbe3c89aa172e649990db5def88862f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackPointLight: {fileID: 767789631}
+  attackPointHeavy1: {fileID: 1001028341}
+  attackPointHeavy2: {fileID: 1908980565}
+  attackRangeLight: 0.7
+  attackRangeHeavy1: 0.64
+  attackRangeHeavy2: 0.84
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  bossLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  animator: {fileID: 747923268}
 --- !u!1 &767789630
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,7 +668,7 @@ GameObject:
   m_Component:
   - component: {fileID: 767789631}
   m_Layer: 3
-  m_Name: AttackPoint
+  m_Name: LightAttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -655,7 +683,38 @@ Transform:
   m_GameObject: {fileID: 767789630}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.101, y: 0.043, z: 0}
+  m_LocalPosition: {x: 0.086, y: 0.025, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 747923267}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1001028340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1001028341}
+  m_Layer: 3
+  m_Name: HeavyAttackPoint1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1001028341
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001028340}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.125, y: 0.056, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -691,6 +750,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1929342408}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1908980564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1908980565}
+  m_Layer: 3
+  m_Name: HeavyAttackPoint2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1908980565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908980564}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.113, y: 0.051, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 747923267}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1929342401
 GameObject:
@@ -902,7 +992,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84d35ecf4f6086846be986a1436f7301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BossHealth: 2000
+  bossHealth: 10000
+  isDead: 0
   animator: {fileID: 1929342403}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

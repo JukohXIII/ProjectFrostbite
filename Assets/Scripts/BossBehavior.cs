@@ -12,9 +12,11 @@ public class BossBehavior : MonoBehaviour
     private SpriteRenderer bossSpriteRenderer;
     private bool animationFinished = false;
     private bool isFacingRight = false;
+    private bool isDead;
     void Start(){
         // Gets the sprite renderer of the boss
         bossSpriteRenderer = GetComponent<SpriteRenderer>();
+        isDead = gameObject.GetComponent<BossStatus>().isDead;
         StartCoroutine(PlayAnimationAndWait());
     }
 
@@ -33,16 +35,17 @@ public class BossBehavior : MonoBehaviour
         if(animationFinished){
             MoveTowardsPlayerXAxis();
         }
+        isDead = gameObject.GetComponent<BossStatus>().isDead;
     }
 
     private void MoveTowardsPlayerXAxis(){
         // If the target is loaded
-        if(target != null){
+        if(target != null && isDead == false){
             // Set the animation param "speed" to 1 to start the animation
             animator.SetFloat("speed",1);
             // Gets the target position on X axis and create a new vector
             Vector3 targetPosition = new Vector3(target.position.x, transform.position.y, transform.position.z);
-            // Makes the boss move to the created previously created position with a new vector
+            // Makes the boss move to the previously created position with a new vector
             transform.position = new Vector3(Vector3.MoveTowards(transform.position, targetPosition,speed*Time.deltaTime).x,
             transform.position.y, transform.position.z);
 

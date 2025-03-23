@@ -4,41 +4,55 @@ using UnityEngine;
 
 public class BossStatus : MonoBehaviour
 {
-    public float BossHealth = 100f;
-    private bool isDead = false;
+    public float bossHealth;
+    public bool isDead = false;
     [SerializeField] private Animator animator;
+
+    SpriteRenderer spriteRenderer;
+    Color spriteRendererColor;
+
+    void Start()
+    {
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        spriteRendererColor = spriteRenderer.color;
+    }
 
     void Update()
     {
-        if (BossHealth <= 0 && !isDead)
+        if (bossHealth <= 0 && !isDead)
         {
             Die();
         }
     }
 
     public void TakeDamage(float damage)
-    { 
-        BossHealth -= damage;
-        Debug.Log("Boss takes " + damage + " damage. Remaining HP: " + BossHealth);
+    {
+        bossHealth -= damage;
+        StartCoroutine(DamageFlashEffect());
     }
 
     private void Die()
     {
         isDead = true;
         Debug.Log("Boss Dead");
-        
+
         if (animator != null)
         {
-            animator.SetTrigger("Dying");
+            animator.SetBool("isDead", true);
         }
 
-        // Désactive le boss après un délai
-        StartCoroutine(DeathSequence());
     }
 
     private IEnumerator DeathSequence()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(10f);
         gameObject.SetActive(false);
+    }
+
+    private IEnumerator DamageFlashEffect()
+    {
+        spriteRenderer.color = new Color(255f / 255f, 180f / 255f, 180f / 255f, 1f);
+        yield return new WaitForSeconds(0.2f);
+        spriteRenderer.color = spriteRendererColor;
     }
 }
