@@ -1,7 +1,5 @@
+using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using UnityEditor.VersionControl;
 using UnityEngine;
 
 public class BossBehavior : MonoBehaviour
@@ -9,73 +7,111 @@ public class BossBehavior : MonoBehaviour
     [SerializeField] private Transform target;
     [SerializeField] private Animator animator;
     [SerializeField] private float speed = 5f;
+    [SerializeField] private float dashSpeed = 15f;
+    [SerializeField] private float dashDuration = 0.7f;
+    [SerializeField] private float dashCooldown = 15f;
+
     private SpriteRenderer bossSpriteRenderer;
     private bool animationFinished = false;
     private bool isFacingRight = false;
     private bool isDead;
-    void Start(){
-        // Gets the sprite renderer of the boss
+    private bool isDashing = false;
+    private bool canDash = true; // Pour éviter que le boss dash en boucle
+
+    void Start()
+    {
+        animator.applyRootMotion = false;
         bossSpriteRenderer = GetComponent<SpriteRenderer>();
         isDead = gameObject.GetComponent<BossStatus>().isDead;
         StartCoroutine(PlayAnimationAndWait());
     }
 
-    // Routine for the Taunt animator to play ONCE
-    IEnumerator PlayAnimationAndWait(){
+    IEnumerator PlayAnimationAndWait()
+    {
         animator.Play("Taunt");
-        //Wait for the end of the animation
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
         animationFinished = true;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // If taunt animation is finished
-        if(animationFinished){
+        if (animationFinished && !isDashing)
+        {
             MoveTowardsPlayerXAxis();
+            if (canDash && Vector2.Distance(transform.position, target.transform.position) < 15f && Vector2.Distance(transform.position, target.transform.position) > 10f)
+            {
+                StartCoroutine(Dash());
+                Debug.Log("POST DASH");
+                Debug.Log(transform.position);
+            }
         }
         isDead = gameObject.GetComponent<BossStatus>().isDead;
     }
 
-    private void MoveTowardsPlayerXAxis(){
-        // If the target is loaded
-        if(target != null && isDead == false){
-            // Set the animation param "speed" to 1 to start the animation
-            animator.SetFloat("speed",1);
-            // Gets the target position on X axis and create a new vector
-            Vector3 targetPosition = new Vector3(target.position.x, transform.position.y, transform.position.z);
-            // Makes the boss move to the previously created position with a new vector
-            transform.position = new Vector3(Vector3.MoveTowards(transform.position, targetPosition,speed*Time.deltaTime).x,
-            transform.position.y, transform.position.z);
+    private void MoveTowardsPlayerXAxis()
+    {
+        if (target != null && !isDead && !isDashing)
+        {
+            animator.SetFloat("speed", 1);
+            Vector3 targetPosition = new(target.position.x, transform.position.y, transform.position.z);
+            transform.position = new Vector3(
+                Vector3.MoveTowards(transform.position,
+                targetPosition, speed * Time.deltaTime).x,
+                transform.position.y, transform.position.z
+            );
 
-            // If the boss' position is quite the same as the player's position, sets the animation param "speed" to 0 to stop the moving animation
-            // and start the idle animation
-            if(Mathf.Approximately(target.position.x, transform.position.x)){
+            if (Mathf.Approximately(target.position.x, transform.position.x))
+            {
                 animator.SetFloat("speed", 0);
             }
 
-            // If the boss is on the player's right
-            if(target.position.x < transform.position.x){
-                // If it is facing right
-                if(isFacingRight){
-                    // Reverses the boss' sprite orientation
-                    Vector3 localScale = transform.localScale;
-                    localScale.x *= -1f;
-                    transform.localScale = localScale;
-                    isFacingRight = false;
-                }
-            // If the boss is on the player's left
-            }else if(target.position.x > transform.position.x){
-                // If the boss is not facing right
-                if(!isFacingRight){
-                    // Reverses the boss' sprite orientation
-                    Vector3 localScale = transform.localScale;
-                    localScale.x *= -1f;
-                    transform.localScale = localScale;
-                    isFacingRight = true;
-                }  
-            }else{} 
+            if (target.position.x < transform.position.x && isFacingRight)
+            {
+                Flip();
+            }
+            else if (target.position.x > transform.position.x && !isFacingRight)
+            {
+                Flip();
+            }
         }
+    }
+
+    private IEnumerator Dash()
+    {
+        if (!isDead)
+        {
+            animator.SetFloat("speed", 0);
+            animator.SetBool("isDashing", true);
+            isDashing = true;
+            canDash = false;
+
+            float initialTargetX = target.position.x;
+            float timer = 0f;
+            Vector3 dashDirection = (initialTargetX > transform.position.x) ? Vector3.right : Vector3.left;
+
+            Debug.Log("AVANT");
+            Debug.Log(transform.position);
+            while (timer <= dashDuration)
+            {
+                transform.position += dashSpeed * Time.deltaTime * dashDirection;
+                timer += Time.deltaTime;
+                yield return null;
+            }
+            Debug.Log("APRES");
+            Debug.Log(transform.position);
+            animator.SetBool("isDashing", false);
+            isDashing = false;
+
+            animator.SetBool("", false);
+
+        }
+    }
+
+    private void Flip()
+    {
+        Vector3 localScale = transform.localScale;
+        localScale.x *= -1f;
+        transform.localScale = localScale;
+        isFacingRight = !isFacingRight;
     }
 }

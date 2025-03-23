@@ -34,7 +34,6 @@ public class BossStatus : MonoBehaviour
     private void Die()
     {
         isDead = true;
-        Debug.Log("Boss Dead");
 
         if (animator != null)
         {
